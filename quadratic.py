@@ -25,7 +25,7 @@ def to_string(a, b, c):
     else: 
         return f"f(x) = {a}x^2 + {b}x + {c}"
 
-def derivation(a, b):
+def derivation(a, b, c):
     if a*2 == 0:
         return f"f'(x) = {b}"
     if b == 0:
