@@ -19,7 +19,7 @@ def to_string(a, b, c):
     if b == 0:
         return f"f(x) = {a}x^2 + {c}"
     if c == 0: 
-        return f"f(x) = {a}x^2 + {b}x"
+        return f"f(x) = {a}x^2 + {b} * X"
     if a == 0 and b == 0:
         return f"f(x) = {c}"
     else: 
@@ -29,8 +29,8 @@ def derivation(a, b, c):
     if a*2 == 0:
         return f"f'(x) = {b}"
     if b == 0:
-        return f"f'(x) = {a*2}x"
-    return f"f'(x) = {a*2}x + {b}"
+        return f"f'(x) = {a*2} * X"
+    return f"f'(x) = {a*2} * X + {b}"
 
 
 #print(roots(1, -3, 2)) # Retorna: "(2.0, 1.0)"
